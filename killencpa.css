@@ -1,0 +1,79 @@
+.container { width:1006px }
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity .75s; /*adjust timing here */
+         -moz-transition: opacity .75s;
+           -o-transition: opacity .75s;
+              transition: opacity .75s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+.container .jumbotron {
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+.container .jumbotron .carousel-inner .item {
+	height: 385px;
+	width: 975px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid rgb(113,113,113);
+}
+
+#item-founded {background-image:url('images/slides/founded.jpg')}
+#item-memberships {background-image:url('images/slides/memberships.jpg')}
+#item-tax {background-image:url('images/slides/tax.jpg')}
+#item-experience {background-image:url('images/slides/experience.jpg')}
+#item-custom {background-image:url('images/slides/custom.jpg')}
+#item-bookkeeping {background-image:url('images/slides/bookkeeping.jpg')}
+
+#carousel-shadow {
+	height: 93px;
+	margin: -65px 0 18px;
+	background: transparent url("images/carousel-shadow.png") no-repeat 50% 0;
+}
+
+body {
+	background: #302825 url("images/bg.jpg") no-repeat;
+	font-family: 'Arimo', sans-serif;
+}
+
+#top { height: 65px }
+
+#logo-header {
+	text-align: left;
+	margin: 0 auto;
+	width:975;
+}
+
+#logo {
+    background: transparent url("images/logo.png") no-repeat;
+    height: 165px;
+	margin: 0;
+	margin-bottom: -93px;
+	position: relative;
+	width: 410px;
+	z-index:98;
+}
+
+#copy {
+	color: #717171;
+	font-size: xx-small;
+}
